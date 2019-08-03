@@ -6,8 +6,8 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.ParameterSpec;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
+import com.su.injectapis.BindView;
 import com.su.injectprocessor.Entity.VariableInfo;
-import com.su.injectprocessor.InjectApi.BindView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,9 +33,9 @@ import javax.lang.model.util.Elements;
 //参考https://www.jianshu.com/p/9e34defcb76f
 
 @AutoService(Processor.class)
-@SupportedAnnotationTypes({"com.su.injectprocessor.InjectApi.BindView"})
+@SupportedAnnotationTypes({"com.su.injectapis.BindView"})
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
-public class BindViewProcess extends AbstractProcessor {
+public class BindViewProcessor extends AbstractProcessor {
 
     //同一个Class下的所有注解信息
     private Map<String, List<VariableInfo>> classMap = new HashMap<>();
@@ -126,6 +126,7 @@ public class BindViewProcess extends AbstractProcessor {
                 javaFile.writeTo(filer);
             }
         } catch (Exception ex) {
+            System.out.println("文件生成失败");
             ex.printStackTrace();
         }
     }

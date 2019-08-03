@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.su.injectprocessor.InjectApi.BindView;
+import com.su.injectapis.BindView;
 import com.su.injectviewapi.BindHelper;
 
 public class MainActivity extends AppCompatActivity {

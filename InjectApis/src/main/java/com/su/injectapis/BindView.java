@@ -1,4 +1,4 @@
-package com.su.injectprocessor.InjectApi;
+package com.su.injectapis;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
