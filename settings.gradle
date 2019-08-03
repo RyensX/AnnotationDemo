@@ -1,1 +1,1 @@
-include ':app', ':InjectProcessor', ':injectviewapi'
+include ':app', ':InjectProcessor', ':injectapi'
