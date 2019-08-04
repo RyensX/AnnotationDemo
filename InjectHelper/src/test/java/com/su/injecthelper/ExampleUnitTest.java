@@ -1,4 +1,4 @@
-package com.su.injectviewapi;
+package com.su.injecthelper;
 
 import org.junit.Test;
 

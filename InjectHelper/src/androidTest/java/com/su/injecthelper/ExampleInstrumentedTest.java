@@ -1,4 +1,4 @@
-package com.su.injectviewapi;
+package com.su.injecthelper;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
